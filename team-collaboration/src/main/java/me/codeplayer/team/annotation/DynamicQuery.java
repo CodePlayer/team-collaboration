@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * 【支持动态查询】<br>
  * 标识指定方法或参数支持动态查询
  * 
- * @package me.codeplayer.team.annotation.
+ * @package me.codeplayer.team.annotation
  * @date 2015年8月14日
  * @since 1.0
  * @author Ready
