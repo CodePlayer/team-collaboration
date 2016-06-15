@@ -1,10 +1,6 @@
 package me.codeplayer.team.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * 【方法参数信息】<br>
@@ -15,7 +11,7 @@ import java.lang.annotation.Target;
  * @since 1.0
  * @author Ready
  */
-@Retention(RetentionPolicy.SOURCE)
+@Retention(RetentionPolicy.CLASS)
 @Documented
 @Target({ ElementType.METHOD, ElementType.PARAMETER })
 public @interface Param {

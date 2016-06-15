@@ -3,8 +3,9 @@ package me.codeplayer.team.annotation;
 import java.lang.annotation.*;
 
 /**
- * 【支持动态查询】<br>
- * 标识指定方法或参数支持动态查询
+ * 【只读数据】<br>
+ * 如果该注解标记在方法上，则表示该方法的返回值对象不允许外部修改<br>
+ * 如果该注解标记在方法的参数上，则表示方法内部不会对传入参数对象做任何修改。
  * 
  * @package me.codeplayer.team.annotation
  * @date 2015年8月14日
@@ -14,14 +15,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.CLASS)
 @Documented
 @Target({ ElementType.METHOD, ElementType.PARAMETER })
-public @interface DynamicQuery {
-
-	/**
-	 * 允许动态查询的参数属性信息
-	 * 
-	 * @return
-	 * @since 1.0
-	 * @author Ready
-	 */
-	String[] value() default {};
+public @interface ReadOnly {
 }

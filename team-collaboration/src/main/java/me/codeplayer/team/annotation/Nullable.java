@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
  * @since 1.0
  * @author Ready
  */
-@Retention(RetentionPolicy.SOURCE)
+@Retention(RetentionPolicy.CLASS)
 @Documented
 @Target({ ElementType.PARAMETER, ElementType.METHOD })
 public @interface Nullable {
